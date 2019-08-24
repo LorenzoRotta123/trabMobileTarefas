@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".criarConta">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Criar uma conta"
+        android:textColor="#4E342E"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:id="@+id/espaco1"
+        android:layout_below="@id/titulo"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco1"
+        android:hint="Nome completo"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco2"
+        android:layout_below="@id/input1"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco2"
+        android:hint="Email"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco3"
+        android:layout_below="@id/input2"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco3"
+        android:hint="Senha"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco4"
+        android:layout_below="@+id/input3"/>
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco4"
+        android:hint="Confirmar senha"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:id="@+id/espaco5"
+        android:layout_below="@+id/input4"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btCriarConta"
+        android:text="CRIAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/espaco5" />
+
+</RelativeLayout>

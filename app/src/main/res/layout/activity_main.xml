@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TAREFAS"
+        android:textColor="#4E342E"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:id="@+id/espaco1"
+        android:layout_below="@id/titulo"/>
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco1"
+        android:layout_marginTop="0dp"
+        android:text="Fazer Trabalho de DSDM                  (30/06/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco2"
+        android:layout_below="@id/check1"/>
+
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco2"
+        android:layout_marginTop="0dp"
+        android:text="Estudar para prova de Química       (30/06/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco3"
+        android:layout_below="@id/check2"/>
+
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco3"
+        android:layout_marginTop="0dp"
+        android:text="Estudar para prova de Biologia           (03/07/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco4"
+        android:layout_below="@id/check3"/>
+
+    <CheckBox
+        android:id="@+id/check04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco4"
+        android:layout_marginTop="0dp"
+        android:text="Fazer trabalho de Inglês                   (30/06/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco5"
+        android:layout_below="@id/check04"/>
+
+    <CheckBox
+        android:id="@+id/check05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco5"
+        android:layout_marginTop="0dp"
+        android:text="Organizar trabalho de Empreendedorismo (02/07/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco06"
+        android:layout_below="@id/check05"/>
+
+    <CheckBox
+        android:id="@+id/check6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco06"
+        android:layout_marginTop="0dp"
+        android:text="Estudar para prova de Matemática (08/07/2019)"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:id="@+id/espaco07"
+        android:layout_below="@id/check6"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btMais"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/espaco07" />
+
+
+
+</RelativeLayout>

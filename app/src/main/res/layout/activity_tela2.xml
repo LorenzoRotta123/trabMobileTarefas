@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tela2">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NOVA TAREFA"
+        android:textColor="#4E342E"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:id="@+id/espaco1"
+        android:layout_below="@id/titulo"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco1"
+        android:hint="Título"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:id="@+id/espaco2"
+        android:layout_below="@id/input1"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco2"
+        android:hint="Digite a data"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:id="@+id/espaco3"
+        android:layout_below="@id/input2"/>
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espaco3"
+        android:gravity="center"
+        android:text="Prioridade"
+        android:textColor="#4E342E"
+        android:textSize="21sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:id="@+id/espaco4"
+        android:layout_below="@id/titulo2"/>
+
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco4"
+        android:layout_marginTop="0dp"
+        android:text="Alta"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check1"
+        android:layout_marginTop="0dp"
+        android:text="Média"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check2"
+        android:layout_marginTop="0dp"
+        android:text="Baixa"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/espaco5"
+        android:layout_below="@id/check3"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btSalvar"
+        android:text="Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/espaco5" />
+
+</RelativeLayout>
